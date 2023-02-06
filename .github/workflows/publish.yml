@@ -1,0 +1,21 @@
+name: Publish package
+
+on:
+  push:
+    branches:
+    - master
+    
+jobs:
+  publish:
+    name: Publish package to PyPI 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Poetry
+        uses: Gr1N/setup-poetry@v8
+
+      - name: Publish package
+        run: poetry publish --build --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }}
+      
