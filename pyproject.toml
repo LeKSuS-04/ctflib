@@ -1,0 +1,32 @@
+# https://python-poetry.org/
+[tool.poetry]
+name = "ctflib"
+version = "0.1.0"
+description = "Tools for better CTF experience"
+authors = ["Alexey Tarasov <tarasovion2004@gmail.com>"]
+license = "WTFPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.241"
+pre-commit = "^3.0.4"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+
+# https://github.com/charliermarsh/ruff#configuration
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
