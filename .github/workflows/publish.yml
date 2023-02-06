@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
 
-      - name: Setup Poetry
+      - name: Set up Poetry
         uses: Gr1N/setup-poetry@v8
 
       - name: Publish package
