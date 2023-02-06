@@ -17,7 +17,7 @@ def xor(data: Iterable[int], key: Iterable[int] | int, cycle_key: bool = True) -
         key = [key]
 
     if cycle_key:
-        values = zip(data, cycle(key))
+        values = zip(data, cycle(key), strict=False)
     else:
         values = zip_longest(data, key, fillvalue=0)
     return bytes(a ^ b for a, b in values)
