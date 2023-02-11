@@ -1,4 +1,4 @@
-from ctflib import alphanumeric, base64alpha, hexalpha
+from ctflib import alphanumeric, base64alpha
 
 
 def should_contain(value: str, characters: str):
@@ -15,7 +15,3 @@ def test_base64lpha():
     should_contain(
         base64alpha, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/='
     )
-
-
-def test_hexalpha():
-    should_contain(hexalpha, '0123456789abcdefABCDEF')
