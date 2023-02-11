@@ -8,7 +8,8 @@ def xor(data: Iterable[int], key: Iterable[int] | int, cycle_key: bool = True) -
     """
     Xor two integer sequences.
 
-    Args:
+    Args
+    ----
         data (Iterable[int]): data to be xored
         key (Iterable[int] | int): key to xor with
         cycle_key (bool, optional): cycle through the key. Defaults to True.
