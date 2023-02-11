@@ -6,6 +6,12 @@ description = "Tools for better CTF experience"
 authors = ["Alexey Tarasov <tarasovion2004@gmail.com>"]
 license = "WTFPL"
 readme = "README.md"
+homepage = "https://github.com/LeKSuS-04/ctflib"
+repository = "https://github.com/LeKSuS-04/ctflib"
+keywords = ["CTF"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha"
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
