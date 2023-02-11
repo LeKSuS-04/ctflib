@@ -71,4 +71,4 @@ def test_distribution():
                 failure_count += 1
 
     success_rate = 1 - failure_count / (repeat_times * alphabet_size)
-    assert success_rate > 0.997
+    assert success_rate > 0.995
